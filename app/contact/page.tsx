@@ -116,10 +116,10 @@ export default function Contact() {
                       Email
                     </h3>
                     <a
-                      href="mailto:info@sarmadoriginal.com"
+                      href="mailto:was8297123@gmail.com"
                       className="text-dark-text/80 hover:text-accent-gold transition-colors"
                     >
-                      info@sarmadoriginal.com
+                      was8297123@gmail.com
                     </a>
                   </div>
                   <div>
@@ -135,7 +135,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="text-dark-text/80 hover:text-accent-gold transition-colors"
                     >
-                      +92 300 1234567
+                      +92 342 8297123
                     </a>
                   </div>
                   <div>

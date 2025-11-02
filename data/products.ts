@@ -12,7 +12,7 @@ export const products: Product[] = [
       { id: '1-250', name: '250g', price: 800, inStock: true, sku: 'HNY-250' },
       { id: '1-500', name: '500g', price: 1500, inStock: true, sku: 'HNY-500' },
     ],
-    images: ['/products/honey-1.jpg', '/products/honey-2.jpg'],
+    images: ['/images/Purehoney.png'],
     tags: ['honey', 'natural', 'organic', 'edible'],
   },
   {
@@ -68,7 +68,7 @@ export const products: Product[] = [
       { id: '5-300', name: '300g', price: 1200, inStock: true, sku: 'GHE-300' },
       { id: '5-1000', name: '1kg', price: 3500, inStock: true, sku: 'GHE-1000' },
     ],
-    images: ['/products/ghee-1.jpg', '/products/ghee-2.jpg'],
+    images: ['/images/DesiGhee.png'],
     tags: ['desi ghee', 'clarified butter', 'cooking', 'premium'],
   },
 ];

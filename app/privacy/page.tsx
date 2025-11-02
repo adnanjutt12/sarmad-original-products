@@ -49,8 +49,8 @@ export default function Privacy() {
               <h2 className="font-serif text-2xl font-bold mt-8 mb-4">Contact Us</h2>
               <p>
                 If you have questions about this Privacy Policy, please contact us at{' '}
-                <a href="mailto:info@sarmadoriginal.com" className="text-accent-gold hover:underline">
-                  info@sarmadoriginal.com
+                <a href="mailto:was8297123@gmail.com" className="text-accent-gold hover:underline">
+                  was8297123@gmail.com
                 </a>
               </p>
             </div>

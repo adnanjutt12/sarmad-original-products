@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Logo from './Logo';
+import UnderConstructionBanner from './UnderConstructionBanner';
 import { ShoppingCartIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useCart } from '@/contexts/CartContext';
 
@@ -20,8 +21,10 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-deep-green shadow-md backdrop-blur-sm bg-opacity-95 animate-fadeInDown">
-      <nav className="container mx-auto px-4 lg:px-8">
+    <>
+      <UnderConstructionBanner />
+      <header className="sticky top-0 z-50 bg-deep-green shadow-md backdrop-blur-sm bg-opacity-95 animate-fadeInDown">
+        <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 hover:scale-105 transition-transform duration-300">
@@ -83,6 +86,7 @@ export default function Header() {
         )}
       </nav>
     </header>
+    </>
   );
 }
 
