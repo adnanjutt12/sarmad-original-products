@@ -9,8 +9,8 @@ export const products: Product[] = [
     longDescription: 'Our honey is sourced from trusted apiaries and harvested with care. It contains natural enzymes and floral notes unique to each batch. Perfect for tea, toast, and natural remedies. Store in a cool, dry place.',
     category: 'honey',
     variants: [
-      { id: '1-250', name: '250g', price: 800, inStock: true, sku: 'HNY-250' },
-      { id: '1-500', name: '500g', price: 1500, inStock: true, sku: 'HNY-500' },
+      { id: '1-250', name: '500g', price: 2100, inStock: true, sku: 'HNY-250' },
+      { id: '1-500', name: '1kg', price: 4200, inStock: true, sku: 'HNY-500' },
     ],
     images: ['/images/Purehoney.png'],
     tags: ['honey', 'natural', 'organic', 'edible'],
@@ -65,8 +65,8 @@ export const products: Product[] = [
     longDescription: 'Our desi ghee is slow-cooked using traditional methods to preserve aroma and nutrients. Ideal for cooking, baking, and Ayurvedic uses. Store at room temperature; refrigerate in warm climates.',
     category: 'ghee',
     variants: [
-      { id: '5-300', name: '300g', price: 1200, inStock: true, sku: 'GHE-300' },
-      { id: '5-1000', name: '1kg', price: 3500, inStock: true, sku: 'GHE-1000' },
+      { id: '5-300', name: '500g', price: 2000, inStock: true, sku: 'GHE-300' },
+      { id: '5-1000', name: '1kg', price: 4000, inStock: true, sku: 'GHE-1000' },
     ],
     images: ['/images/DesiGhee.png'],
     tags: ['desi ghee', 'clarified butter', 'cooking', 'premium'],

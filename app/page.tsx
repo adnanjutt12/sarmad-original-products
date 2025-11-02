@@ -219,7 +219,7 @@ export default function Home() {
                     )}
                   </div>
                   <h3 className="font-serif text-xl font-bold mb-2 group-hover:text-accent-gold transition-colors">Pure Desi Ghee</h3>
-                  <p className="text-dark-text/60 mb-4">300g / 1kg</p>
+                  <p className="text-dark-text/60 mb-4">500g / 1kg</p>
                   <Link
                     href="/shop/pure-desi-ghee"
                     className="block w-full text-center bg-deep-green text-white py-3 rounded-lg font-semibold hover:bg-deep-green/90 transition-all duration-300 hover:scale-105 transform"
