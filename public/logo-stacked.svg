@@ -1,0 +1,39 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9a84a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b85a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Bottle Icon (larger for stacked) -->
+  <g transform="translate(55, 15)">
+    <!-- Bottle silhouette -->
+    <path
+      d="M20 4C18.8954 4 18 4.89543 18 6V8H14C13.4477 8 13 8.44772 13 9V45C13 47.2091 14.7909 49 17 49H23C25.2091 49 27 47.2091 27 45V9C27 8.44772 26.5523 8 26 8H22V6C22 4.89543 21.1046 4 20 4Z"
+      fill="#c9a84a"
+    />
+    <!-- Bottle neck detail -->
+    <rect x="17" y="8" width="6" height="2" fill="#0f5a3c" opacity="0.3" />
+    <!-- Cap/stopper -->
+    <rect x="18.5" y="4" width="3" height="2" rx="1" fill="#c9a84a" />
+    <!-- Honey drop/leaf accent -->
+    <path
+      d="M20 14C18.5 14 17 15.5 17 17C17 18.5 18.5 20 20 21.5C21.5 20 23 18.5 23 17C23 15.5 21.5 14 20 14Z"
+      fill="#0f5a3c"
+    />
+    <!-- Decorative line -->
+    <path d="M18 30H22" stroke="#0f5a3c" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+  
+  <!-- Text: Sarmad (centered) -->
+  <text x="75" y="100" font-family="Playfair Display, serif" font-size="32" font-weight="700" fill="#c9a84a" letter-spacing="0.05em" text-anchor="middle">
+    Sarmad
+  </text>
+  
+  <!-- Text: Original Products (centered) -->
+  <text x="75" y="120" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#c9a84a" letter-spacing="0.1em" text-anchor="middle" text-transform="uppercase">
+    Original Products
+  </text>
+</svg>
+

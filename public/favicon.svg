@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="31" fill="#0f5a3c" />
+  
+  <!-- Minimalist "S" using thick, simple curves - optimized for 16x16px -->
+  <!-- Top half of S -->
+  <path
+    d="M 18 20 Q 18 14 24 14 L 40 14 Q 46 14 46 20 L 46 22 Q 46 26 42 26 L 22 26 Q 18 26 18 22 Z"
+    fill="#c9a84a"
+  />
+  <!-- Bottom half of S -->
+  <path
+    d="M 46 42 Q 46 48 40 48 L 24 48 Q 18 48 18 42 L 18 40 Q 18 36 22 36 L 42 36 Q 46 36 46 40 Z"
+    fill="#c9a84a"
+  />
+  <!-- Center connector -->
+  <rect x="22" y="28" width="20" height="8" rx="2" fill="#c9a84a" />
+</svg>
