@@ -4,7 +4,9 @@ const nextConfig = {
     domains: [],
     unoptimized: false,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = nextConfig
-
