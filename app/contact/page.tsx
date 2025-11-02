@@ -130,7 +130,7 @@ export default function Contact() {
                       WhatsApp
                     </h3>
                     <a
-                      href="https://wa.me/923001234567"
+                      href="https://wa.me/923428297123"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-dark-text/80 hover:text-accent-gold transition-colors"
