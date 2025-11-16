@@ -20,8 +20,10 @@ export default function Checkout() {
     paymentMethod: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isOrderPlaced, setIsOrderPlaced] = useState(false);
 
-  if (items.length === 0) {
+  // Only redirect to shop if cart is empty AND we haven't just placed an order
+  if (items.length === 0 && !isOrderPlaced) {
     router.push('/shop');
     return null;
   }
@@ -30,13 +32,67 @@ export default function Checkout() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // TODO: Implement actual order submission
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    try {
+      // Prepare order data
+      const orderItems = items.map((item) => ({
+        productId: item.product.id,
+        productName: item.product.name,
+        variantId: item.variant.id,
+        variantName: item.variant.name,
+        quantity: item.quantity,
+        price: item.variant.price,
+        sku: item.variant.sku,
+      }));
 
-    // Clear cart and redirect
-    clearCart();
-    router.push('/order-confirmation');
+      const orderData = {
+        customer: {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          address: formData.address,
+          city: formData.city,
+          postalCode: formData.postalCode,
+        },
+        order: {
+          items: orderItems,
+          subtotal: getTotalPrice(),
+          shipping: shippingCost,
+          total: totalWithShipping,
+          paymentMethod: formData.paymentMethod,
+        },
+      };
+
+      // Send order to API
+      const response = await fetch('/api/send-order-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(orderData),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+
+      if (result.success && result.orderId) {
+        // Mark order as placed before clearing cart
+        setIsOrderPlaced(true);
+        // Clear cart
+        clearCart();
+        // Redirect to success page with order ID
+        router.push(`/order-confirmation?orderId=${result.orderId}`);
+      } else {
+        throw new Error(result.message || 'Failed to place order');
+      }
+    } catch (error) {
+      console.error('Error placing order:', error);
+      alert(`Failed to place order: ${error instanceof Error ? error.message : 'Please try again.'}`);
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
